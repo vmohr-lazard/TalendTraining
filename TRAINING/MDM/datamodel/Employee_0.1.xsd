@@ -1,1 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="Employee">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="EmployeeId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Employee">
+<xsd:selector xpath="."/>
+<xsd:field xpath="EmployeeId"/>
+</xsd:unique>
+</xsd:element>
+</xsd:schema>
