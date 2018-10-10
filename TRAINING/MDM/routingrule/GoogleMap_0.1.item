@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><mdmserverobject:WSRoutingRuleE xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmlns:xmi="http://www.omg.org/XMI" concept="Update" condition="Store And DM And (CR Or (UP And DoNotLoop And Address))" description="Complete with Google Map" name="GoogleMap" parameters="&lt;configuration&gt;&#10;  &lt;url&gt;ltj://GoogleMap/0.1&lt;/url&gt;&#10;  &lt;contextParam&gt;&#10;    &lt;name&gt;xmlInput&lt;/name&gt;&#10;    &lt;value&gt;{exchange_data}&lt;/value&gt;&#10;  &lt;/contextParam&gt;&#10;&lt;/configuration&gt;" serviceJNDI="amalto/local/service/callJob" synchronous="true" xmi:id="_ifub4KsQEeG4CbSrdZtHRA" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><mdmserverobject:WSRoutingRuleE xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmlns:xmi="http://www.omg.org/XMI" concept="Update" condition="Store And DM And (CR Or (UP And DoNotLoop And Address))" description="Complete with Google Map" digestValue="41cce3c510141dc15014a5c8a89fe157" lastServerName="MDM" name="GoogleMap" parameters="&lt;configuration&gt;&#10;  &lt;url&gt;ltj://GoogleMap/0.1&lt;/url&gt;&#10;  &lt;contextParam&gt;&#10;    &lt;name&gt;xmlInput&lt;/name&gt;&#10;    &lt;value&gt;{exchange_data}&lt;/value&gt;&#10;  &lt;/contextParam&gt;&#10;&lt;/configuration&gt;" serviceJNDI="amalto/local/service/callJob" synchronous="true" timestamp="1539188099500" xmi:id="_ifub4KsQEeG4CbSrdZtHRA" xmi:version="2.0">
   <wsRoutingRuleExpressions name="Store" value="Store" xmi:id="_ifub4qsQEeG4CbSrdZtHRA" xpath="Update/Concept">
     <wsOperator value="EQUALS" xmi:id="_ifub46sQEeG4CbSrdZtHRA"/>
   </wsRoutingRuleExpressions>
@@ -17,13 +17,13 @@
   <wsRoutingRuleExpressions name="Address" value="Address" xmi:id="_ifub7KsQEeG4CbSrdZtHRA" xpath="Update/Item/path">
     <wsOperator value="CONTAINS" xmi:id="_ifub7asQEeG4CbSrdZtHRA"/>
   </wsRoutingRuleExpressions>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_441ed7d9-a88a-4ff1-a76f-cff22b6a191d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nsCwZzOwQVvmgQRF4qemrepEbiGnwa2ufgooVBs2ZUNm8ZTvinHoJAwb/tD/ByVJWqFiUDWVwLvs
-ZUmqEhm2rw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_79dbb2a4-3790-4d03-ad19-7cd14766aaab"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>S1XkhrJpp+NYyxtN2YdzBo2qkNSpypr1XTgmvYfuQAec+V27Zaq8nroPosjx4PjMkKGno73m7j9q
-lubU5RNY4Q==</DigestValue></Reference></SignedInfo><SignatureValue>0ap7glSEM2kes33LZNUMCOF05uWEPdXXemMLqipNHvvqHzVyufgYR56RFTEwsM7IjCYWIB5oyePc
-rKC9zYzsWtg6YIOsscF99UAk9wikU+/bjmc2LF+X2HVXftAonxR1b6etLWzXzyO4RtC9UgaTcgAk
-YYver5KpUQJg6kzBOcqg8d10W8qMMSBMIbBnHprXuFJ2FxSB74b0D58D4uKA6md8ZCcSwmqP2kK7
-xUleAWXGLltEiuYMxPAvvc3lEkicfVSDi1N786hvSkqUtXp/nbrq6plNWAFqYdQiqrmf33J1tMBl
-xSHqITLISOnCWuulhSB6WQNOjrKtcK2+bHXuUw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_52c0c8e0-373a-48a0-9f98-c557382d31c9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Rq+YcElec+ORO0iGeCmgLejbTjZ6/ao8Stm+3FL/ce0LhW6y2CTlk0MmdvvE9tAJpb0e1IdyOq2z
+8iAgSNBNtg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f32d4bb0-48a8-4f63-8b3e-8ea17197dbc9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3+Q7pDAhogJrJmhqz/InecaeQf4WVlclGK0Jsto+tALznMw9FQaZ+2oft4njPxrJgkrLTjJFrqII
+8xcbyiwE2g==</DigestValue></Reference></SignedInfo><SignatureValue>m4kmBaD0aNa6IaKda18nY4NI4oAIDH3/OnIviEAq3Qoa4D1bjwjFK8dVx2/hzeSs3plSrEg2Soum
+5IeSQNMBMPHoeRxpJ1xoEqFn8mJ6iAyIrdfMhhelz487pOyNm/mkXcyIGLDy3yBoZTrpkDXXJjvN
+8n+0ytgiwYXKTrg8bMWKVcSgvLUJm2Icf3xhySOm8S86KqqqeN7dwlt9Ew7IuTrQInlLTXczDWkf
+EGRuOescniimj5rpLdEPjAiM6rtmRT9NqawD0ze8/Xkv95xpk6IxjbQxRf+mjnm+0oKOV/Ndc6Ok
+VQKPhR72mFgzBaB7vkzG9F3eOrDv+m8QF4xqnw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -47,4 +47,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_79dbb2a4-3790-4d03-ad19-7cd14766aaab" Target="#_441ed7d9-a88a-4ff1-a76f-cff22b6a191d"><Timestamp>2018-10-10 16:09:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></mdmserverobject:WSRoutingRuleE>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f32d4bb0-48a8-4f63-8b3e-8ea17197dbc9" Target="#_52c0c8e0-373a-48a0-9f98-c557382d31c9"><Timestamp>2018-10-10 16:15:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></mdmserverobject:WSRoutingRuleE>
