@@ -486,4 +486,6 @@
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_Msy9oMizEei4C6ENFfNcVA" login="tori.mohr@lazard.com" firstName="Tori" lastName="Mohr" type="MDM" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_BBq90ci0Eeib65dvcL7QBw" login="ron.tovbin@lazard.com" firstName="Ron" lastName="Tovbin" type="MDM" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_aqogcMyjEeiYXdabERMaZA" login="admin@lazard.com" firstName="admin" lastName="admin" type="MDM" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_aqogccyjEeiYXdabERMaZA" login="brendan.frick@lazard.com" firstName="Brendan" lastName="Frick" type="MDM" additionnalData="{}"/>
 </xmi:XMI>
