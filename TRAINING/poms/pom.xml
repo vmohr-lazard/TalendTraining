@@ -10,6 +10,21 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
+    <module>jobs/process/MDMProductDemo/MDM_Inbound/checkavailability_0.1</module>
+    <module>jobs/process/MDMProductDemo/MDM_Load/mdm_loadall_0.1</module>
+    <module>jobs/process/MDMProductDemo/MDM_Inbound/showstoremap_0.1</module>
+    <module>jobs/process/MDMProductDemo/MDM_Inbound/googlemap_0.1</module>
+    <module>jobs/process/MDMProductDemo/MDM_Load/loadproducts_0.1</module>
+    <module>jobs/process/MDMProductDemo/Matching/addproductce_0.1</module>
+    <module>jobs/process/MDMProductDemo/MDM_Inbound/completestoreurl_0.1</module>
+    <module>jobs/process/MDMProductDemo/MDM_Load/loadproductfamilies_0.1</module>
+    <module>jobs/process/MDMProductDemo/Maintenance/deletefamilies_0.1</module>
+    <module>jobs/process/MDMProductDemo/MDM_Inbound/validatepricechange_0.1</module>
+    <module>jobs/process/MDMProductDemo/Maintenance/mdm_reset_0.1</module>
+    <module>jobs/process/MDMProductDemo/MDM_Load/loadproductfeatures_0.1</module>
+    <module>jobs/process/MDMProductDemo/MDM_Outbound/synchronizeapps_0.1</module>
+    <module>jobs/process/MDMProductDemo/Maintenance/createusers_0.1</module>
+    <module>jobs/process/MDMProductDemo/Maintenance/deleteproducts_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TRAINING</talend.project.name>

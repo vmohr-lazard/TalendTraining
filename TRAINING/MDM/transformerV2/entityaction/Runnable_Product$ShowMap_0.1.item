@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><mdmserverobject:WSTransformerV2E xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmlns:xmi="http://www.omg.org/XMI" description="[EN:Show on map][FR:Voir sur la carte]" name="Runnable_Product#ShowMap" xmi:id="_t1LnwXdIEeGMK_tLGnzsJg" xmi:version="2.0">
+  <processSteps description="Retrieve the complete item from the update report" parameters="&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;  xmlns:mdm=&quot;java:com.amalto.core.plugin.base.xslt.MdmExtension&quot; version=&quot;1.0&quot;&gt; &lt;xsl:output method=&quot;xml&quot; indent=&quot;yes&quot; omit-xml-declaration=&quot;yes&quot; /&gt; &lt;xsl:template match=&quot;/&quot; priority=&quot;1&quot;&gt;&#10;&lt;exchange&gt; &lt;report&gt;&#10; &lt;xsl:copy-of select=&quot;Update&quot;/&gt; &lt;/report&gt;  &lt;item&gt;&lt;xsl:copy-of select='mdm:getItemProjection(Update/RevisionID,Update/DataCluster,Update/Concept,Update/Key)'/&gt;&lt;/item&gt;&lt;/exchange&gt; &lt;/xsl:template&gt; &lt;/xsl:stylesheet&gt;&#10;" pluginJNDI="amalto/local/transformer/plugin/xslt" xmi:id="_t1LnwndIEeGMK_tLGnzsJg">
+    <inputMappings pipelineVariable="_DEFAULT_" pluginVariable="xml" xmi:id="_t1Lnw3dIEeGMK_tLGnzsJg"/>
+    <outputMappings pipelineVariable="item_xml" pluginVariable="text" xmi:id="_t1LnxHdIEeGMK_tLGnzsJg"/>
+  </processSteps>
+  <processSteps description="Escape the item XML" parameters="&lt;parameters&gt;&#10;&lt;method&gt;DECODE&lt;/method&gt;&#10;&lt;algorithm&gt;XMLESCAPE&lt;/algorithm&gt;&#10;&lt;/parameters&gt;&#10;" pluginJNDI="amalto/local/transformer/plugin/codec" xmi:id="_t1LnxXdIEeGMK_tLGnzsJg">
+    <inputMappings pipelineVariable="item_xml" pluginVariable="law_text" xmi:id="_t1LnxndIEeGMK_tLGnzsJg"/>
+    <outputMappings pipelineVariable="decode_xml" pluginVariable="codec_text" xmi:id="_t1Lnx3dIEeGMK_tLGnzsJg"/>
+  </processSteps>
+  <processSteps description="Invoke the job" parameters="&lt;configuration&gt;&#10;  &lt;url&gt;ltj://ShowStoreMap/0.1&lt;/url&gt;&#10;  &lt;contextParam&gt;&#10;    &lt;name&gt;exchangeMessage&lt;/name&gt;&#10;    &lt;value&gt;{decode_xml}&lt;/value&gt;&#10;  &lt;/contextParam&gt;&#10;&lt;/configuration&gt;" pluginJNDI="amalto/local/transformer/plugin/callJob" xmi:id="_t1LnyHdIEeGMK_tLGnzsJg">
+    <inputMappings pipelineVariable="decode_xml" pluginVariable="text" xmi:id="_t1LnyXdIEeGMK_tLGnzsJg"/>
+    <outputMappings pipelineVariable="output_url" pluginVariable="result" xmi:id="_t1LnyndIEeGMK_tLGnzsJg"/>
+  </processSteps>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4ba6ac37-1ed5-4dfb-a12a-57747fe700c2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RGgnYfp4ScbPspjYu7N/FzJf6y4FZwDU9XetMVxdFKRSrpkVtx9aAgovYODcYi/6wLyNnijUk3Jt
+ePQSypq5rA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5eebdff6-72fa-49ed-b98d-20a9f9833dff"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ey2GLbkDAGapvE0Qff8ZZr/jzBx2V5dFXd6JyRUY7p9Pg4WGM41LDQmQhgp2t9RWhwTGJulRsYiD
++1m9P7Gq4g==</DigestValue></Reference></SignedInfo><SignatureValue>oIbZeyEc21gF4N4us5CHKWHj2FJ/wKVLpbqQC3Xul+W3Xk53RfxeV3qhy7ENGst4Sh4ab8CLRSne
+YF8fazZ1aryJ6rZ7SHVhrSTaeQvxjPf/xlXJfXF3P0NO+ca/vYMhKVm7QWgjJilNTUpDdopr3Rbs
+n1bM5e1iEi2JFg9rFeBBmiJBhh8ib9e6NdP1FdWucTUN25Z5xOHmJFYHJvmR17FMcGVCKpcSIpOH
+2ugkfefNxJ2D7SvLAQ/LMsV/LtmQr4DDAHHQk/8NHSl1L0PB7t7vDlAjXqk9t4aCQDEHw8h+biYl
+b/5X9/maRyDK6SoD/Ny2U0/4URfIOw9muLVdtw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5eebdff6-72fa-49ed-b98d-20a9f9833dff" Target="#_4ba6ac37-1ed5-4dfb-a12a-57747fe700c2"><Timestamp>2018-10-10 16:08:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></mdmserverobject:WSTransformerV2E>
