@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:MatchRuleDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_RcfAkNFeEeiSHvTa1_Ibgg" name="NameRule">
+  <taggedValue xmi:id="_RcfAkdFeEeiSHvTa1_Ibgg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_RcfAktFeEeiSHvTa1_Ibgg" tag="Author" value="tori.mohr@lazard.com"/>
+  <taggedValue xmi:id="_RcfAk9FeEeiSHvTa1_Ibgg" tag="Purpose"/>
+  <taggedValue xmi:id="_RcfAlNFeEeiSHvTa1_Ibgg" tag="Description"/>
+  <taggedValue xmi:id="_RcfAldFeEeiSHvTa1_Ibgg" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_RcfAltFeEeiSHvTa1_Ibgg" tag="Validation_Status" value="true"/>
+  <matchRules xmi:id="_RcfAl9FeEeiSHvTa1_Ibgg" name="Match Rule 4">
+    <matchKeys xmi:id="_RcfAmNFeEeiSHvTa1_Ibgg" name="FirstName" column="first_name" confidenceWeight="2" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+      <algorithm xmi:id="_RcfAmdFeEeiSHvTa1_Ibgg" algorithmType="JARO_WINKLER" algorithmParameters=""/>
+    </matchKeys>
+    <matchKeys xmi:id="_RcfAmtFeEeiSHvTa1_Ibgg" name="LastName" column="last_name" confidenceWeight="8" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+      <algorithm xmi:id="_RcfAm9FeEeiSHvTa1_Ibgg" algorithmType="JARO_WINKLER" algorithmParameters=""/>
+    </matchKeys>
+  </matchRules>
+</dataquality.rules:MatchRuleDefinition>
