@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "Longest County Name"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "Longest County NameGroup"
+when
+    $input : RecordIn( dataset.isLongest( county, "county", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "county", drools.getRule().getName());
+
+end
+
+
