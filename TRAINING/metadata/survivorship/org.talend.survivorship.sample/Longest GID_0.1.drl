@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "Longest GID"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "Longest GIDGroup"
+when
+    $input : RecordIn( dataset.isLongest( gid, "GID", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "GID", drools.getRule().getName());
+
+end
+
+
