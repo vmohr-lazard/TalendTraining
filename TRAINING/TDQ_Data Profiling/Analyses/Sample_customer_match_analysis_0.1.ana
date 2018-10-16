@@ -30,7 +30,14 @@
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_-m8v4NFbEeiSHvTa1_Ibgg"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_-m8v4dFbEeiSHvTa1_Ibgg">
       <builtInMatchRuleDefinition xmi:id="_-m8v4tFbEeiSHvTa1_Ibgg">
-        <matchRules xmi:id="__Y4jINFbEeiSHvTa1_Ibgg" name="Match Rule 1"/>
+        <matchRules xmi:id="_xkqI0NFcEeiSHvTa1_Ibgg" name="Match Rule 4">
+          <matchKeys xmi:id="_zNd5sNFcEeiSHvTa1_Ibgg" name="FirstName" column="first_name" confidenceWeight="2" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+            <algorithm xmi:id="_zNd5sdFcEeiSHvTa1_Ibgg" algorithmType="JARO_WINKLER" algorithmParameters=""/>
+          </matchKeys>
+          <matchKeys xmi:id="_8_xhQNFcEeiSHvTa1_Ibgg" name="LastName" column="last_name" confidenceWeight="8" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+            <algorithm xmi:id="_8_xhQdFcEeiSHvTa1_Ibgg" algorithmType="JARO_WINKLER" algorithmParameters=""/>
+          </matchKeys>
+        </matchRules>
       </builtInMatchRuleDefinition>
     </indicators>
   </results>
