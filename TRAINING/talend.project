@@ -107,6 +107,21 @@
       <relatedItems xmi:id="_3XyakdFbEeiSHvTa1_Ibgg" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3XyaktFbEeiSHvTa1_Ibgg" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3Xyak9FbEeiSHvTa1_Ibgg" id="_yU7koNFbEeiSHvTa1_Ibgg - sample_customer_metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_6RL2QNFrEeioP7YHqJh-mQ" id="_zM7JUNFrEeioP7YHqJh-mQ" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_6RL2QdFrEeioP7YHqJh-mQ" id="_3gmlANFrEeioP7YHqJh-mQ" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_6RL2QtFrEeioP7YHqJh-mQ" id="_10bXENFrEeioP7YHqJh-mQ" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_6RL2Q9FrEeioP7YHqJh-mQ" id="_yyTC0NFrEeioP7YHqJh-mQ" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_6RL2RNFrEeioP7YHqJh-mQ" id="_09r8UNFrEeioP7YHqJh-mQ" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_6RL2RdFrEeioP7YHqJh-mQ" id="_0F8cANFrEeioP7YHqJh-mQ" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_6RL2RtFrEeioP7YHqJh-mQ" id="_2phzENFrEeioP7YHqJh-mQ" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_6RL2R9FrEeioP7YHqJh-mQ" id="_2PErsNFrEeioP7YHqJh-mQ" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_6RL2SNFrEeioP7YHqJh-mQ" id="_1YNVINFrEeioP7YHqJh-mQ" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_6RL2SdFrEeioP7YHqJh-mQ" id="_0g8V8NFrEeioP7YHqJh-mQ" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_6RL2StFrEeioP7YHqJh-mQ" id="_36-M0NFrEeioP7YHqJh-mQ" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_6RL2S9FrEeioP7YHqJh-mQ" id="_3EVfwNFrEeioP7YHqJh-mQ" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_6RL2TNFrEeioP7YHqJh-mQ" id="_yTY5QNFrEeioP7YHqJh-mQ" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_6RL2TdFrEeioP7YHqJh-mQ" id="_yWJ5YNFrEeioP7YHqJh-mQ" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_6RL2TtFrEeioP7YHqJh-mQ" id="_zpg-sNFrEeioP7YHqJh-mQ" version="Latest" type="survivorshipRuleRelation"/>
     </ItemsRelations>
     <migrationTask xmi:id="_M-XOwMizEei4C6ENFfNcVA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_M-XOwcizEei4C6ENFfNcVA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
