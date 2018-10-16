@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "Longest Company Name"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "Longest Company NameGroup"
+when
+    $input : RecordIn( dataset.isLongest( company_name, "company_name", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "company_name", drools.getRule().getName());
+
+end
+
+
