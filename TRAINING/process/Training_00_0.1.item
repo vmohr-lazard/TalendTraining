@@ -761,6 +761,83 @@
       <elementValue elementRef="VALUE" value="&quot;&quot;"/>
       <elementValue elementRef="OUTPUT_COLUMN" value="last_name"/>
       <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;Longest Company Name&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="company_name"/>
+      <elementValue elementRef="FUNCTION" value="Longest"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="company_name"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;Longest Address&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="address"/>
+      <elementValue elementRef="FUNCTION" value="Longest"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="address"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;Longest City Name&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="city"/>
+      <elementValue elementRef="FUNCTION" value="Longest"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="city"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;Longest County Name&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="county"/>
+      <elementValue elementRef="FUNCTION" value="Longest"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="county"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;Longest Zip&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="postal"/>
+      <elementValue elementRef="FUNCTION" value="Longest"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="postal"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;Longest Phone 1&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="phone1"/>
+      <elementValue elementRef="FUNCTION" value="Longest"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="phone1"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;Longest Phone 2&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="phone2"/>
+      <elementValue elementRef="FUNCTION" value="Longest"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="phone2"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;Longest Email&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="email"/>
+      <elementValue elementRef="FUNCTION" value="Longest"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="email"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;Longest Web&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="web"/>
+      <elementValue elementRef="FUNCTION" value="Longest"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="web"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;Longest GID&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="GID"/>
+      <elementValue elementRef="FUNCTION" value="Longest"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="GID"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="RELATION" value="SEQ"/>
+      <elementValue elementRef="RULE_NAME" value="&quot;Largest Group Size&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="GRP_SIZE"/>
+      <elementValue elementRef="FUNCTION" value="Longest"/>
+      <elementValue elementRef="VALUE" value="&quot;&quot;"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="GRP_SIZE"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DEFINE_CONFLICT" value="false"/>
     <elementParameter field="TABLE" name="CONFLICT_TABLE" show="false"/>
@@ -856,13 +933,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b7446cd2-b10a-4bbb-8976-2857c2fd0c27"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bsDvR5Rq9s/3FJHtBAvP2X5hc8eqReQDVAnuYHTe6KmKi1unaITaQhkepgcRgGxjaR8SNIcoHbZU
-qyBJiXgq4A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fbc4fcd8-e1c9-4a09-8f5d-79257da2481b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BqGg8zrS3aYW0uU7JdYER3Qor057LERnSdYsJv3aQ5AV+hHDxkHrK2xTs8Z5r3wceGlDaJwM0G+Q
-1kLLtkh0ow==</DigestValue></Reference></SignedInfo><SignatureValue>u7wBuu/1VdM56okxt+9mgjN6LCE3FsvTf3Xy383c+fIgCvK3GZ/v1ynJj5Xn9jpn1X4GmNUjbwhq
-y3c+GpHdLaQSny0KhWG2wJnuoGHaFOeoanptDfTa/qs+yxbsko20T9PGJqHI/b6IcDl7yJFMM7nC
-d7GUudk39LOeUAOscVJYTRqclMYhJhkL+iyykh9TDs5ldFhytijSDuHRc1L8gGBaBi2X0ByIBAzh
-xuC895+Mej+9l2UcRS+Q2epYijoe+SG4GB15yiqCSuRnW+4VlBiePkxJYfi7aRZ7IoH78kzHYzey
-FON75b6ULiR92/O1fNCQE8K5b6PNdio1/qL7WA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_27f5af00-a5bf-4d4b-9414-5e2c12ebae3a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yWvqMZ5u6pIQd6EKFgglCoEy+CbL0e6/lSfCf8GDzPRKhP60qeT1GssIFzdzkDFnIbgdo3duZd4N
+3ZQ4sSm3uQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ebaec8ba-22ab-4167-b729-541bdc8d4081"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HKhku3FZSigI7PSn2LwK/chqb2Jv+RmWIXs8FeNjp1HOkhpSOCreBEJmyrCNBIigp/Fa8uaScv3b
+M+H1xppW+A==</DigestValue></Reference></SignedInfo><SignatureValue>HRHqAZtLhpGXLJ/RwUcA4kFP+ckbQFRpJLRT9+i/unvK7dTpXiYw+atrBHDn58Zrkej+f7KyVjji
+5ulhiYbvrVgwPGyueStO7OLqFfsAGrICKImxL3ERKxL5Hvx4MpSdWXsjdAYHuDXYT6yS8AjpfVfl
+ABP79hstxnpcQGcYHb9ZBnnF1ysvcI9LsSrYx6BtRkLEykiVI42aDUvUSDDPjUJXK0SGLWSk9ZAj
+qBnTjYQaz2E59esBBgCm9oYr/SFGpE3N2BQ9pheRByFarT5187590SNTtkqE+Dv1jAIdaiqc25Kl
+OI0mnmKkGnlD15Q2sIh8e6snZ1E3RBeD4FflPg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -886,4 +963,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fbc4fcd8-e1c9-4a09-8f5d-79257da2481b" Target="#_b7446cd2-b10a-4bbb-8976-2857c2fd0c27"><Timestamp>2018-10-16 16:58:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ebaec8ba-22ab-4167-b729-541bdc8d4081" Target="#_27f5af00-a5bf-4d4b-9414-5e2c12ebae3a"><Timestamp>2018-10-16 17:47:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
