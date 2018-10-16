@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "Longest Web"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "Longest WebGroup"
+when
+    $input : RecordIn( dataset.isLongest( web, "web", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "web", drools.getRule().getName());
+
+end
+
+
