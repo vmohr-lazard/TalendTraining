@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "Largest Group Size"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "Largest Group SizeGroup"
+when
+    $input : RecordIn( dataset.isLongest( grp_size, "GRP_SIZE", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "GRP_SIZE", drools.getRule().getName());
+
+end
+
+
