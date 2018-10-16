@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "Longest City Name"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "Longest City NameGroup"
+when
+    $input : RecordIn( dataset.isLongest( city, "city", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "city", drools.getRule().getName());
+
+end
+
+
