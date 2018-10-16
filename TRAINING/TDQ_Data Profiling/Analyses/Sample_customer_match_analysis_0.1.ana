@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_-m8I0NFbEeiSHvTa1_Ibgg" name="Sample_customer_match_analysis" creationDate="2018-10-16T15:56:00.667+0000">
+  <taggedValue xmi:id="_-m8I0dFbEeiSHvTa1_Ibgg" tag="PREVIEW_ROW_NUMBER" value="10000"/>
+  <taggedValue xmi:id="_-m8I0tFbEeiSHvTa1_Ibgg" tag="Status" value="development"/>
+  <taggedValue xmi:id="_-m8I09FbEeiSHvTa1_Ibgg" tag="Author" value="tori.mohr@lazard.com"/>
+  <taggedValue xmi:id="_-m8I1NFbEeiSHvTa1_Ibgg" tag="Purpose"/>
+  <taggedValue xmi:id="_-m8I1dFbEeiSHvTa1_Ibgg" tag="Description"/>
+  <taggedValue xmi:id="_-m8I1tFbEeiSHvTa1_Ibgg" tag="Version" value="0.1"/>
+  <context xmi:id="_-m8I19FbEeiSHvTa1_Ibgg"/>
+  <results xmi:id="_-m8I2NFbEeiSHvTa1_Ibgg">
+    <resultMetadata xmi:id="_-m8I2dFbEeiSHvTa1_Ibgg"/>
+    <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_-m8v4NFbEeiSHvTa1_Ibgg"/>
+    <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_-m8v4dFbEeiSHvTa1_Ibgg">
+      <builtInMatchRuleDefinition xmi:id="_-m8v4tFbEeiSHvTa1_Ibgg"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_-m8v49FbEeiSHvTa1_Ibgg" analysisType="Match Analysis"/>
+</dataquality.analysis:Analysis>
