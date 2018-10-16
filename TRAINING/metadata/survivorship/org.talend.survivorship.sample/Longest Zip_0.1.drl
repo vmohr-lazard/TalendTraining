@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "Longest Zip"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "Longest ZipGroup"
+when
+    $input : RecordIn( dataset.isLongest( postal, "postal", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "postal", drools.getRule().getName());
+
+end
+
+
