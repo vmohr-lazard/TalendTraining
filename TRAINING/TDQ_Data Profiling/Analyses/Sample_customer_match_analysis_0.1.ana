@@ -1,18 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_-m8I0NFbEeiSHvTa1_Ibgg" name="Sample_customer_match_analysis" creationDate="2018-10-16T15:56:00.667+0000">
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_-m8I0NFbEeiSHvTa1_Ibgg" name="Sample_customer_match_analysis" creationDate="2018-10-16T15:56:00.667+0000" defaultContext="Default">
+  <clientDependency href="../../metadata/fileDelimited/SampleData_0.1.item#__eYHINFbEeiSHvTa1_Ibgg"/>
   <taggedValue xmi:id="_-m8I0dFbEeiSHvTa1_Ibgg" tag="PREVIEW_ROW_NUMBER" value="10000"/>
   <taggedValue xmi:id="_-m8I0tFbEeiSHvTa1_Ibgg" tag="Status" value="development"/>
   <taggedValue xmi:id="_-m8I09FbEeiSHvTa1_Ibgg" tag="Author" value="tori.mohr@lazard.com"/>
-  <taggedValue xmi:id="_-m8I1NFbEeiSHvTa1_Ibgg" tag="Purpose"/>
-  <taggedValue xmi:id="_-m8I1dFbEeiSHvTa1_Ibgg" tag="Description"/>
+  <taggedValue xmi:id="_-m8I1NFbEeiSHvTa1_Ibgg" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_-m8I1dFbEeiSHvTa1_Ibgg" tag="Description" value=""/>
   <taggedValue xmi:id="_-m8I1tFbEeiSHvTa1_Ibgg" tag="Version" value="0.1"/>
-  <context xmi:id="_-m8I19FbEeiSHvTa1_Ibgg"/>
+  <taggedValue xmi:id="__a5VUNFbEeiSHvTa1_Ibgg" tag="TEMP_DATA_DIR" value=""/>
+  <taggedValue xmi:id="__a5VUdFbEeiSHvTa1_Ibgg" tag="MAX_BUFFER_SIZE" value="200000"/>
+  <taggedValue xmi:id="__a5VUtFbEeiSHvTa1_Ibgg" tag="STORE_ON_DISK" value="false"/>
+  <taggedValue xmi:id="__eVD0dFbEeiSHvTa1_Ibgg" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+  <context xmi:id="_-m8I19FbEeiSHvTa1_Ibgg">
+    <connection href="../../metadata/fileDelimited/SampleData_0.1.item#_yVF8sNFbEeiSHvTa1_Ibgg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/SampleData_0.1.item#_yVKOItFbEeiSHvTa1_Ibgg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/SampleData_0.1.item#_yVKOI9FbEeiSHvTa1_Ibgg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/SampleData_0.1.item#_yVKOJNFbEeiSHvTa1_Ibgg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/SampleData_0.1.item#_yVKOJdFbEeiSHvTa1_Ibgg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/SampleData_0.1.item#_yVKOJtFbEeiSHvTa1_Ibgg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/SampleData_0.1.item#_yVKOJ9FbEeiSHvTa1_Ibgg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/SampleData_0.1.item#_yVKOKNFbEeiSHvTa1_Ibgg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/SampleData_0.1.item#_yVKOKdFbEeiSHvTa1_Ibgg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/SampleData_0.1.item#_yVKOKtFbEeiSHvTa1_Ibgg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/SampleData_0.1.item#_yVKOK9FbEeiSHvTa1_Ibgg"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/SampleData_0.1.item#_yVKOLNFbEeiSHvTa1_Ibgg"/>
+  </context>
   <results xmi:id="_-m8I2NFbEeiSHvTa1_Ibgg">
     <resultMetadata xmi:id="_-m8I2dFbEeiSHvTa1_Ibgg"/>
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_-m8v4NFbEeiSHvTa1_Ibgg"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_-m8v4dFbEeiSHvTa1_Ibgg">
-      <builtInMatchRuleDefinition xmi:id="_-m8v4tFbEeiSHvTa1_Ibgg"/>
+      <builtInMatchRuleDefinition xmi:id="_-m8v4tFbEeiSHvTa1_Ibgg">
+        <matchRules xmi:id="__Y4jINFbEeiSHvTa1_Ibgg" name="Match Rule 1"/>
+      </builtInMatchRuleDefinition>
     </indicators>
   </results>
   <parameters xmi:id="_-m8v49FbEeiSHvTa1_Ibgg" analysisType="Match Analysis"/>
+  <contextType xmi:id="__eVD0NFbEeiSHvTa1_Ibgg" confirmationNeeded="false" name="Default"/>
 </dataquality.analysis:Analysis>
